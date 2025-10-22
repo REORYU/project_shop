@@ -1,0 +1,7 @@
+{
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.configuration.updateBuildConfiguration": "interactive",
+
+  // 터미널 기본 경로를 frontend로 고정
+  "terminal.integrated.cwd": "${workspaceFolder}/frontend"
+}

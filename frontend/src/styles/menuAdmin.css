@@ -1,0 +1,176 @@
+/* ================= 카드 ================= */
+.table-wrapper {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 40px auto;
+  max-width: 1400px;  /* 메인상품관리는 상대적으로 좁게 */
+  width: 95%;
+  transition: all 0.25s ease;
+}
+.table-wrapper:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+/* ================= 제목 + 검색/다운로드 ================= */
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: nowrap;
+}
+.table-header h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #c9a040;
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
+}
+.table-header h2 small {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  opacity: 0.9;
+}
+.table-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.search-box input {
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  width: 200px;
+}
+.btn-download {
+  background: #c9a040;
+  color: #fff;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.2s;
+}
+.btn-download:hover {
+  background: #b38930;
+}
+
+/* ================= 테이블 ================= */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  text-align: center;
+  table-layout: fixed;
+}
+.admin-table th,
+.admin-table td {
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  font-size: 14px;
+  word-break: break-word;
+}
+.admin-table th {
+  background: #f8f8f8;
+  font-weight: bold;
+}
+
+/* ===== 열 비율 (메인상품관리 전용, 합계 100%) ===== */
+.admin-table th:nth-child(1),
+.admin-table td:nth-child(1) { width: 5%; }   /* 체크박스 */
+.admin-table th:nth-child(2),
+.admin-table td:nth-child(2) { width: 7%; }   /* ID */
+.admin-table th:nth-child(3),
+.admin-table td:nth-child(3) { width: 56%; }  /* 상품명 */
+.admin-table th:nth-child(4),
+.admin-table td:nth-child(4) { width: 14%; }  /* 등록일 */
+.admin-table th:nth-child(5),
+.admin-table td:nth-child(5) { width: 18%; }  /* 관리 */
+
+/* ================= 상품명 ================= */
+.product-name {
+  text-align: left;
+  padding-left: 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* ================= 버튼 ================= */
+.btn-outline-primary,
+.btn-outline-danger {
+  min-width: 60px;
+  height: 32px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+}
+.btn-outline-primary {
+  border: 1px solid #007bff;
+  color: #007bff;
+  background: transparent;
+}
+.btn-outline-primary:hover {
+  background: #007bff;
+  color: #fff;
+}
+.btn-outline-danger {
+  border: 1px solid #dc3545;
+  color: #dc3545;
+  background: transparent;
+}
+.btn-outline-danger:hover {
+  background: #dc3545;
+  color: #fff;
+}
+
+/* 관리 칸 버튼 정렬 */
+.admin-table td:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ================= 페이징 ================= */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin: 20px 0;
+}
+.pagination button {
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+.pagination button.active {
+  background: #c9a040;
+  color: #fff;
+  border-color: #c9a040;
+}
+
+/* ================= 선택 삭제 ================= */
+.bulk-actions {
+  margin-top: 10px;
+  text-align: left;
+}

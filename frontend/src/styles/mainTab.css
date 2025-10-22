@@ -1,0 +1,77 @@
+.main-tab-wrapper {
+  max-width: 800px;
+  margin: 160px auto;
+  padding: 40px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.main-tab-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.main-tab-header h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #b8860b;
+  margin: 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-group small {
+  display: block;
+  margin-top: 5px;
+  font-size: 13px;
+  color: #777;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.form-buttons .btn-gold {
+  background: #b8860b;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-buttons .btn-gray {
+  background: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}

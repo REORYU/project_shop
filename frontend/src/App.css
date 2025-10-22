@@ -1,0 +1,45 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 화면 꽉 채움 */
+}
+
+
+/* Header */
+header {
+  border-bottom: 1px solid var(--color-border);
+  padding: 16px 24px;
+  background-color: var(--color-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+/* Main */
+/* 본문 */
+main {
+  flex: 1;
+  padding: 24px;
+  background-color: var(--color-bg);
+  margin-bottom: 0px;   /* 🔽 푸터와 본문 사이 여백 확보 */
+}
+
+
+/* 푸터 */
+footer {
+  border-top: 1px solid var(--color-border);
+  padding: 12px 20px;   /* 너무 크지 않게 축소 */
+  text-align: center;
+  background-color: var(--color-bg);
+  color: #666;
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0;            /* 🚩 margin-top은 절대 주지 않음 */
+}
+

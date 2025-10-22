@@ -1,0 +1,97 @@
+/***** Footer *****/
+.footer {
+  background: #fff;
+  border-top: 2px solid #C9A227;
+  padding: 20px 0 15px;
+  color: #333;
+  font-size: 13px;
+  margin-top: 0 !important;
+}
+
+.footer-container {
+  max-width: 1430px;   /* 메인 컨텐츠와 동일한 기준 */
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-start; /* 왼쪽 시작 라인 고정 */
+}
+
+.footer-left {
+  text-align: left;
+  flex: 1;
+  line-height: 1.7;
+}
+
+.footer-left p {
+  margin: 4px 0;
+}
+
+.footer-links {
+  margin-top: 8px;
+}
+
+.footer-links a {
+  margin-right: 12px;
+  text-decoration: none;
+  color: #555;
+  font-size: 13px;
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+.footer-links a:hover {
+  color: #C9A227;
+}
+
+/* 협력처 강조 */
+.footer-links a.partner-link {
+  color: #C9A227;
+  font-weight: bold;
+  border-bottom: 2px solid #C9A227;
+  padding-bottom: 2px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 18px;
+  padding-top: 10px;
+  font-size: 12px;
+  color: #777;
+  border-top: 1px solid #eee;
+}
+
+.copyright .gold {
+  color: #C9A227;
+  font-weight: bold;
+}
+
+/***** 레이아웃 보정 *****/
+html, body, #root {
+  height: auto !important;
+}
+
+#root {
+  display: block !important;
+}
+
+.main-page,
+.main-content,
+.product-grid-wrapper {
+  display: block !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 16px 0 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.main-page > *:last-child,
+.main-content > *:last-child,
+.product-grid-wrapper > *:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}

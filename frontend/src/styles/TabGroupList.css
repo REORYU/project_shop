@@ -1,0 +1,132 @@
+/* =========================
+   📋 탭 그룹 테이블
+========================= */
+.tabgroup-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* 헤더 */
+.tabgroup-table th {
+  padding: 12px;
+  text-align: center;
+  background: #f9f9f9;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid var(--color-border);
+}
+
+/* 셀 */
+.tabgroup-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee; /* ✅ 얇은 가로줄 */
+}
+
+/* 짝수 행 배경 */
+.tabgroup-table tr:nth-child(even) td {
+  background: #fafafa;
+}
+
+/* ✅ hover 효과 */
+.tabgroup-table tbody tr:hover td {
+  background: #fffbea; /* 연노랑 */
+  transition: background 0.2s ease;
+}
+
+/* =========================
+   📋 버튼
+========================= */
+.btn-edit {
+  background: #fff;
+  border: 1px solid #0d6efd;
+  color: #0d6efd;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 4px;
+  transition: 0.2s;
+}
+.btn-edit:hover {
+  background: #0d6efd;
+  color: #fff;
+}
+
+.btn-delete {
+  background: #fff;
+  border: 1px solid #dc3545;
+  color: #dc3545;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-delete:hover {
+  background: #dc3545;
+  color: #fff;
+}
+
+/* =========================
+   📋 제목 + 검색 영역
+========================= */
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.search-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.search-select {
+  padding: 8px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 14px;
+  width: 200px;
+}
+
+/* =========================
+   📋 페이징
+========================= */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  border: 1px solid var(--color-border);
+  background: #fff;
+  padding: 6px 12px;
+  margin: 0 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination button:hover {
+  background: var(--color-gold);
+  color: #fff;
+}
+
+.pagination button.active {
+  background: var(--color-gold);
+  color: #fff;
+  font-weight: bold;
+}

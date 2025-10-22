@@ -1,0 +1,46 @@
+/* 전체 래퍼 */
+.tab-group-wrapper {
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* 제목 */
+.gallery-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #c7a046; /* 상단 "보면대"랑 같은 금색 */
+}
+
+/* 버튼 리스트 */
+.tab-list {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* 기본 버튼 */
+.tab-button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+/* 버튼 hover → 금색 */
+.tab-button:hover {
+  background: #c7a046;   /* 상단 제목과 동일 색상 */
+  color: #fff;
+  border-color: #c7a046;
+}
+
+/* 선택된 버튼(active) → 파란색 */
+.tab-button.active {
+  background: #0d6efd;
+  color: #fff;
+  border-color: #0d6efd;
+}

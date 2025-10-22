@@ -1,0 +1,389 @@
+/* =========================
+   📋 페이지 전체
+========================= */
+.mt-page {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.mt-container {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 95%;
+  max-width: 1600px;
+  transition: all 0.25s ease;
+}
+
+.mt-container:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   📋 헤더 + 검색
+========================= */
+.mt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: nowrap;
+}
+
+.mt-header h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #c9a040; /* 금색 */
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.mt-header h2 small {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+}
+
+/* 검색 영역 */
+.mt-search-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mt-search-box select,
+.mt-search-box input {
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.mt-search-box input {
+  width: 200px;
+}
+
+.mt-search-box button {
+  padding: 6px 12px;
+  background: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.mt-search-box button:hover {
+  background: #0b5ed7;
+}
+
+/* =========================
+   📋 테이블
+========================= */
+.mt-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.mt-table th,
+.mt-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.mt-table th {
+  background: #f9f9f9;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+}
+
+.mt-table tr:nth-child(even) td {
+  background: #fafafa;
+}
+
+.mt-table tbody tr:hover td {
+  background: #fffbea;
+  transition: background 0.2s ease;
+}
+
+/* 썸네일 이미지 */
+.thumb-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+/* =========================
+   📋 버튼 그룹
+========================= */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+.btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+  line-height: 1.2;
+}
+
+/* 수정 버튼 */
+.btn.btn-outline-primary {
+  background: #fff;
+  border: 1px solid #0d6efd;
+  color: #0d6efd;
+}
+
+.btn.btn-outline-primary:hover {
+  background: #0d6efd;
+  color: #fff;
+}
+
+/* 삭제 버튼 */
+.btn.btn-outline-danger {
+  background: #fff;
+  border: 1px solid #dc3545;
+  color: #dc3545;
+}
+
+.btn.btn-outline-danger:hover {
+  background: #dc3545;
+  color: #fff;
+}
+
+/* 이동 버튼 */
+.btn.btn-move {
+  background: #fff;
+  border: 1px solid #6c757d;
+  color: #6c757d;
+}
+
+.btn.btn-move:hover {
+  background: #6c757d;
+  color: #fff;
+}
+
+/* 정렬 버튼 */
+.btn-sort {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+  color: #666;
+  margin: 0 2px;
+  transition: color 0.2s ease;
+}
+
+.btn-sort:hover {
+  color: #0d6efd;
+}
+
+/* =========================
+   📋 일괄 삭제
+========================= */
+.bulk-actions {
+  text-align: right;
+  margin-top: 10px;
+}
+
+/* =========================
+   📋 페이징
+========================= */
+.mt-pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.mt-pagination button {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 6px 12px;
+  margin: 0 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mt-pagination button:hover {
+  background: #c9a040;
+  color: #fff;
+}
+
+.mt-pagination .active {
+  background: #c9a040;
+  color: #fff;
+  font-weight: bold;
+}
+
+.mt-pagination button:disabled {
+  background: #f5f5f5;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* =========================
+   📋 모달 (공통)
+========================= */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px;
+  width: 500px;
+  max-width: 95%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.25s ease;
+}
+
+.modal-content.wide {
+  width: 600px;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #c9a040;
+}
+
+/* 모달 내부 폼 */
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-content label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.modal-content input,
+.modal-content select,
+.modal-content textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.modal-content textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+/* =========================
+   📋 모달 버튼
+========================= */
+.btn-gold {
+  background: #c9a040;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.btn-gold:hover {
+  background: #b28930;
+}
+
+.btn-gray {
+  background: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.btn-gray:hover {
+  background: #ccc;
+}
+
+/* =========================
+   📋 미리보기
+========================= */
+.modal-content.preview {
+  padding: 12px;
+  width: auto;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.preview-img {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  object-fit: contain;
+}
+
+/* =========================
+   📋 애니메이션
+========================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

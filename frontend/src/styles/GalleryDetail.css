@@ -1,0 +1,130 @@
+/* ================= 타이틀 ================= */
+.gallery-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #c9a040;
+  margin: 40px 0 20px;
+}
+
+/* ================= 탭 버튼 ================= */
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.tab-btn {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tab-btn.active,
+.tab-btn:hover {
+  background: #c9a040;
+  color: #fff;
+  border-color: #c9a040;
+}
+
+/* ================= 50:50 레이아웃 ================= */
+.content-row {
+  display: flex;
+  gap: 30px;
+  margin: 30px auto;
+  max-width: 1100px;       /* 🔥 위아래 동일 넓이 */
+  align-items: stretch;    /* 높이 동일 */
+}
+
+.content-image {
+  flex: 1;
+  display: flex;
+}
+.content-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+
+  /* 액션 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.content-image img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* 설명 카드 */
+.content-info {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  /* 등장 애니메이션 */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* ================= 이미지 단독 / 추가 콘텐츠 ================= */
+.content-full {
+  margin: 30px auto;
+  max-width: 1100px;    /* 🔥 위와 동일하게 맞춤 */
+
+  /* 등장 애니메이션 */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+.content-full img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+
+  /* 액션 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.content-full img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= 등장 애니메이션 ================= */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= 추가 버튼 ================= */
+.add-image-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.add-image-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #c9a040;
+  background: #fff;
+  color: #c9a040;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-image-btn:hover {
+  background: #c9a040;
+  color: #fff;
+}

@@ -1,0 +1,103 @@
+/* 메뉴 등록 카드 */
+.menu-card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  padding: 32px 28px;
+  max-width: 480px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.menu-card h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-gold);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.menu-card label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.menu-card input,
+.menu-card select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.menu-card input:focus,
+.menu-card select:focus {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px rgba(201, 160, 64, 0.2);
+  outline: none;
+}
+
+/* 버튼 */
+.menu-card .btn-gold {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+/* 입력창 + 아이콘 */
+.input-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.focus-icon {
+  position: absolute;
+  right: 12px;
+  top: 40px;
+  font-size: 18px;
+  animation: pop 0.4s ease-out;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+/* 아이콘 pop 애니메이션 */
+@keyframes pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  60% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+/* 안내 메시지 */
+.form-message {
+  padding: 10px 14px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* 성공 메시지 */
+.form-message.success {
+  background: #e6ffed;
+  border: 1px solid #2ecc71;
+  color: #1e874b;   /* ✅ 조금 더 진한 초록 */
+}
+
+/* 실패 메시지 */
+.form-message.error {
+  background: #ffe6e6;
+  border: 1px solid #e74c3c;
+  color: #c0392b;   /* ✅ 조금 더 진한 빨강 */
+}
